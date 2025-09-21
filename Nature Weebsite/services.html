@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - Nature</title>
+    <meta name="description" content="Explore our comprehensive nature-focused services including conservation, education, and adventure programs.">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">
+                    <img src="logo.png" alt="Nature Logo" class="logo">
+                    <span class="logo-text">Nature</span>
+                </a>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="services.html" class="nav-link active">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="pricing.html" class="nav-link">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item nav-theme-toggle">
+                    <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle dark mode">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </li>
+            </ul>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="page-header-background">
+            <img src="Services/Services-Hero.jpg" alt="Our Services" class="page-header-image">
+        </div>
+        <div class="page-header-overlay">
+            <div class="container">
+                <h1>Our Services</h1>
+                <p>Comprehensive nature-focused offerings</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Filter -->
+    <section class="services-filter-section">
+        <div class="container">
+            <div class="services-filter">
+                <div class="filter-group">
+                    <label for="category-filter">Filter by Category:</label>
+                    <select id="category-filter" class="filter-select">
+                        <option value="all">All Categories</option>
+                        <option value="conservation">Conservation</option>
+                        <option value="education">Education</option>
+                        <option value="adventure">Adventure</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="sort-filter">Sort by:</label>
+                    <select id="sort-filter" class="filter-select">
+                        <option value="popularity">Popularity</option>
+                        <option value="name">Name</option>
+                        <option value="price">Price</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section class="services-section">
+        <div class="container">
+            <div class="services-grid" id="services-grid">
+                <div class="service-card" data-category="conservation">
+                    <div class="service-image">
+                        <img src="Services/Service-1.jpg" alt="Nature Conservation" loading="lazy">
+                        <div class="service-category">Conservation</div>
+                    </div>
+                    <div class="service-content">
+                        <h3>Nature Conservation</h3>
+                        <p>Protecting and preserving natural habitats for future generations through sustainable practices and community involvement.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Habitat restoration</li>
+                            <li><i class="fas fa-check"></i> Species protection</li>
+                            <li><i class="fas fa-check"></i> Community engagement</li>
+                            <li><i class="fas fa-check"></i> Research programs</li>
+                        </ul>
+                        <div class="service-price">Starting at $99/month</div>
+                        <button class="service-button">Learn More</button>
+                    </div>
+                </div>
+
+                <div class="service-card" data-category="education">
+                    <div class="service-image">
+                        <img src="Services/Service-2.jpg" alt="Environmental Education" loading="lazy">
+                        <div class="service-category">Education</div>
+                    </div>
+                    <div class="service-content">
+                        <h3>Environmental Education</h3>
+                        <p>Educational programs designed to teach people of all ages about environmental stewardship and nature appreciation.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> School programs</li>
+                            <li><i class="fas fa-check"></i> Online courses</li>
+                            <li><i class="fas fa-check"></i> Workshops</li>
+                            <li><i class="fas fa-check"></i> Certification</li>
+                        </ul>
+                        <div class="service-price">Starting at $49/month</div>
+                        <button class="service-button">Learn More</button>
+                    </div>
+                </div>
+
+                <div class="service-card" data-category="adventure">
+                    <div class="service-image">
+                        <img src="Services/Service-3.jpg" alt="Nature Adventures" loading="lazy">
+                        <div class="service-category">Adventure</div>
+                    </div>
+                    <div class="service-content">
+                        <h3>Nature Adventures</h3>
+                        <p>Guided outdoor experiences that allow you to explore and connect with nature in exciting and meaningful ways.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Guided hikes</li>
+                            <li><i class="fas fa-check"></i> Wildlife watching</li>
+                            <li><i class="fas fa-check"></i> Photography tours</li>
+                            <li><i class="fas fa-check"></i> Camping trips</li>
+                        </ul>
+                        <div class="service-price">Starting at $79/month</div>
+                        <button class="service-button">Learn More</button>
+                    </div>
+                </div>
+
+                <div class="service-card" data-category="conservation">
+                    <div class="service-image">
+                        <img src="Services/Service-1.jpg" alt="Wildlife Protection" loading="lazy">
+                        <div class="service-category">Conservation</div>
+                    </div>
+                    <div class="service-content">
+                        <h3>Wildlife Protection</h3>
+                        <p>Specialized programs focused on protecting endangered species and their natural habitats.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Endangered species</li>
+                            <li><i class="fas fa-check"></i> Habitat monitoring</li>
+                            <li><i class="fas fa-check"></i> Rescue operations</li>
+                            <li><i class="fas fa-check"></i> Breeding programs</li>
+                        </ul>
+                        <div class="service-price">Starting at $149/month</div>
+                        <button class="service-button">Learn More</button>
+                    </div>
+                </div>
+
+                <div class="service-card" data-category="education">
+                    <div class="service-image">
+                        <img src="Services/Service-2.jpg" alt="Climate Education" loading="lazy">
+                        <div class="service-category">Education</div>
+                    </div>
+                    <div class="service-content">
+                        <h3>Climate Education</h3>
+                        <p>Comprehensive programs teaching about climate change, its impacts, and solutions for a sustainable future.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Climate science</li>
+                            <li><i class="fas fa-check"></i> Impact assessment</li>
+                            <li><i class="fas fa-check"></i> Solution strategies</li>
+                            <li><i class="fas fa-check"></i> Action planning</li>
+                        </ul>
+                        <div class="service-price">Starting at $69/month</div>
+                        <button class="service-button">Learn More</button>
+                    </div>
+                </div>
+
+                <div class="service-card" data-category="adventure">
+                    <div class="service-image">
+                        <img src="Services/Service-3.jpg" alt="Eco Tourism" loading="lazy">
+                        <div class="service-category">Adventure</div>
+                    </div>
+                    <div class="service-content">
+                        <h3>Eco Tourism</h3>
+                        <p>Sustainable tourism experiences that promote environmental awareness while supporting local communities.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Sustainable travel</li>
+                            <li><i class="fas fa-check"></i> Local partnerships</li>
+                            <li><i class="fas fa-check"></i> Cultural exchange</li>
+                            <li><i class="fas fa-check"></i> Eco-friendly lodging</li>
+                        </ul>
+                        <div class="service-price">Starting at $199/month</div>
+                        <button class="service-button">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Download -->
+    <section class="services-download-section">
+        <div class="container">
+            <div class="download-content">
+                <h2>Download Our Services Catalog</h2>
+                <p>Get detailed information about all our services in a comprehensive PDF document.</p>
+                <button class="download-button" onclick="downloadServices()">
+                    <i class="fas fa-download"></i> Download Services PDF
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Get Started?</h2>
+                <p>Choose the service that best fits your needs and begin your nature journey today.</p>
+                <div class="cta-buttons">
+                    <a href="pricing.html" class="cta-button">View Pricing</a>
+                    <a href="contact.html" class="cta-button-outline">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="logo.png" alt="Nature Logo" class="logo">
+                        <span class="logo-text">Nature</span>
+                    </div>
+                    <p>Connecting people with nature's wonders through education, conservation, and adventure.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">Nature Conservation</a></li>
+                        <li><a href="services.html">Environmental Education</a></li>
+                        <li><a href="services.html">Nature Adventures</a></li>
+                        <li><a href="services.html">Community Programs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Nature Trail, Forest City</p>
+                    <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                    <p><i class="fas fa-envelope"></i> info@nature.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Nature. All rights reserved.</p>
+                <div class="footer-social">
+                    <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
