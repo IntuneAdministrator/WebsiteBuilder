@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Pricing – Basic, Standard, and Premium packages for calibration and diagnostics.">
+    <meta name="theme-color" content="#0d1b2a">
+    <title>Pricing • Auto Calibration</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+      .pricing-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+      @media (max-width:980px){.pricing-grid{grid-template-columns:repeat(2,1fr)}}
+      @media (max-width:640px){.pricing-grid{grid-template-columns:1fr}}
+      .pricing-card{display:flex;flex-direction:column;justify-content:stretch;background:var(--card);border:1px solid var(--border);border-radius:16px;box-shadow:var(--shadow);padding:18px}
+      .pricing-card .price{font-size:2rem;font-weight:800;margin:8px 0}
+      .pricing-card .features{list-style:none;margin:12px 0 16px;padding:0}
+      .pricing-card .features li{margin:6px 0;color:var(--muted)}
+      .pricing-card .cta-wrap{margin-top:auto}
+      .pricing-card:hover{transform:translateY(-2px);transition:transform .2s ease}
+      .popular{border-color:var(--accent)}
+      .badge{display:inline-flex;align-items:center;gap:6px;background:var(--accent);color:#fff;padding:6px 10px;border-radius:999px;font-size:.85rem;font-weight:700}
+    </style>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header" id="top">
+      <div class="container header-inner">
+        <a class="brand" href="index.html" aria-label="Automotive Car Calibration Home">
+          <img src="assets/logo.svg" alt="Automotive Calibration Logo" width="40" height="40" />
+          <span>Auto Calibration</span>
+        </a>
+        <nav class="site-nav" aria-label="Primary">
+          <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">
+            <span class="sr-only">Toggle navigation</span>
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <ul id="nav-menu">
+            <li><a class="nav-link" href="index.html">Home</a></li>
+            <li><a class="nav-link" href="about.html">About</a></li>
+            <li><a class="nav-link" href="services.html">Services</a></li>
+            <li><a class="nav-link active" href="pricing.html">Pricing</a></li>
+            <li><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="section">
+        <div class="container section-header">
+          <h1>Pricing</h1>
+          <p>Simple, transparent packages. All plans include safety checks and reports.</p>
+        </div>
+        <div class="container pricing-grid" id="pricing-grid">
+          <article class="pricing-card reveal" aria-label="Basic package">
+            <h3>Basic</h3>
+            <p class="price">$149</p>
+            <ul class="features">
+              <li>Diagnostic scan</li>
+              <li>Report with recommendations</li>
+              <li>Baseline calibration check</li>
+            </ul>
+            <div class="cta-wrap">
+              <a class="btn btn-outline" href="contact.html#book">Choose Basic</a>
+            </div>
+          </article>
+          <article class="pricing-card popular reveal" aria-label="Standard package">
+            <div class="badge"><i class="fa-solid fa-star"></i> Most Popular</div>
+            <h3>Standard</h3>
+            <p class="price">$299</p>
+            <ul class="features">
+              <li>ADAS camera calibration</li>
+              <li>Wheel alignment</li>
+              <li>Full diagnostic report</li>
+            </ul>
+            <div class="cta-wrap">
+              <a class="btn btn-primary" href="contact.html#book">Choose Standard</a>
+            </div>
+          </article>
+          <article class="pricing-card reveal" aria-label="Premium package">
+            <h3>Premium</h3>
+            <p class="price">$499</p>
+            <ul class="features">
+              <li>Full ADAS sensor suite calibration</li>
+              <li>ECU software updates</li>
+              <li>Priority turnaround</li>
+            </ul>
+            <div class="cta-wrap">
+              <a class="btn btn-outline" href="contact.html#book">Choose Premium</a>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="36" height="36" role="img" aria-label="Automotive Calibration Logo">
+            <defs>
+              <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#1e66f5"/>
+                <stop offset="1" stop-color="#ef476f"/>
+              </linearGradient>
+            </defs>
+            <circle cx="32" cy="32" r="30" fill="url(#g)" opacity="0.15" stroke="#1e66f5" stroke-width="2"/>
+            <g fill="none" stroke="#1e66f5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 32h40"/>
+              <path d="M32 12v40"/>
+            </g>
+            <g fill="none" stroke="#ef476f" stroke-width="3" stroke-linecap="round">
+              <path d="M20 20l24 24"/>
+              <path d="M44 20L20 44"/>
+            </g>
+            <circle cx="32" cy="32" r="6" fill="#1e66f5"/>
+          </svg>
+          <p>Expert automotive calibration and diagnostics. Safety meets precision.</p>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul class="list-plain">
+            <li><i class="fa-solid fa-phone"></i> <a href="tel:+11234567890">+1 (123) 456-7890</a></li>
+            <li><i class="fa-solid fa-envelope"></i> <a href="mailto:info@autocalib.com">info@autocalib.com</a></li>
+            <li><i class="fa-solid fa-location-dot"></i> 100 Calibration Way, Tech City</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Follow</h4>
+          <div class="socials">
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <p>© <span id="year"></span> Auto Calibration. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+    <script>
+      // Equal heights for pricing cards
+      (function(){
+        const cards = Array.from(document.querySelectorAll('.pricing-card'));
+        function equalize(){
+          cards.forEach(c=>c.style.height='auto');
+          const h = Math.max(...cards.map(c=>c.getBoundingClientRect().height));
+          cards.forEach(c=>c.style.height = h + 'px');
+        }
+        window.addEventListener('resize', equalize);
+        window.addEventListener('load', equalize);
+        equalize();
+      })();
+    </script>
+  </body>
+  </html>
+
+

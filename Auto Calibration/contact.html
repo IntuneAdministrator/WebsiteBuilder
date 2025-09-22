@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Contact Auto Calibration – get in touch, book a service, find us on the map.">
+    <meta name="theme-color" content="#0d1b2a">
+    <title>Contact • Auto Calibration</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+      .contact-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:20px}
+      @media (max-width:900px){.contact-grid{grid-template-columns:1fr}}
+      .form-card{background:var(--card);border:1px solid var(--border);border-radius:16px;box-shadow:var(--shadow);padding:18px}
+      .form-row{display:flex;gap:12px;flex-wrap:wrap}
+      .input{width:100%;padding:12px 14px;border-radius:12px;border:1px solid var(--border);background:transparent;color:var(--text)}
+      .map{border:0;width:100%;height:320px;border-radius:16px;overflow:hidden}
+      /* Make textarea visually match card size */
+      .form-card form{display:flex;flex-direction:column;gap:12px}
+      .form-card textarea.input{min-height:320px}
+      @media (max-width:900px){.form-card textarea.input{min-height:240px}}
+    </style>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header" id="top">
+      <div class="container header-inner">
+        <a class="brand" href="index.html" aria-label="Automotive Car Calibration Home">
+          <img src="assets/logo.svg" alt="Automotive Calibration Logo" width="40" height="40" />
+          <span>Auto Calibration</span>
+        </a>
+        <nav class="site-nav" aria-label="Primary">
+          <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">
+            <span class="sr-only">Toggle navigation</span>
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <ul id="nav-menu">
+            <li><a class="nav-link" href="index.html">Home</a></li>
+            <li><a class="nav-link" href="about.html">About</a></li>
+            <li><a class="nav-link" href="services.html">Services</a></li>
+            <li><a class="nav-link" href="pricing.html">Pricing</a></li>
+            <li><a class="nav-link active" href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="section" aria-label="Contact form and info">
+        <div class="container contact-grid">
+          <article class="form-card" id="book">
+            <h1>Contact Us</h1>
+            <p>Have a question or need a quote? Send us a message and we’ll respond shortly.</p>
+            <form id="contact-form">
+              <div class="form-row">
+                <label style="flex:1 1 260px">
+                  <span>Name</span><br>
+                  <input class="input" type="text" name="name" placeholder="Your name" required>
+                </label>
+                <label style="flex:1 1 260px">
+                  <span>Email</span><br>
+                  <input class="input" type="email" name="email" placeholder="you@example.com" required>
+                </label>
+              </div>
+              <label>
+                <span>Message</span><br>
+                <textarea class="input" name="message" rows="6" placeholder="Tell us about your vehicle and service needs" required></textarea>
+              </label>
+              <div style="margin-top:12px;display:flex;gap:10px;align-items:center">
+                <button type="submit" class="btn btn-primary">Send Message</button>
+                <span id="form-status" aria-live="polite" style="color:var(--muted)"></span>
+              </div>
+            </form>
+          </article>
+          <aside>
+            <img loading="lazy" src="https://picsum.photos/seed/garage2/1600/1000" alt="Customer service at an automotive garage" style="width:100%;height:auto;border-radius:16px;border:1px solid var(--border);box-shadow:var(--shadow);margin-bottom:12px" />
+            <iframe class="map" title="Workshop location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509374!2d144.95373631538135!3d-37.81627974257039!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d43f1f9f1fd%3A0x2a0a3b3b5f4b4f9!2sWorkshop!5e0!3m2!1sen!2s!4v1600000000000!5m2!1sen!2s" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <ul class="list-plain" style="margin-top:12px">
+              <li><i class="fa-solid fa-phone"></i> <a href="tel:+11234567890">+1 (123) 456-7890</a></li>
+              <li><i class="fa-solid fa-envelope"></i> <a href="mailto:info@autocalib.com">info@autocalib.com</a></li>
+              <li><i class="fa-solid fa-clock"></i> Mon–Sat: 8:00–18:00</li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="36" height="36" role="img" aria-label="Automotive Calibration Logo">
+            <defs>
+              <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#1e66f5"/>
+                <stop offset="1" stop-color="#ef476f"/>
+              </linearGradient>
+            </defs>
+            <circle cx="32" cy="32" r="30" fill="url(#g)" opacity="0.15" stroke="#1e66f5" stroke-width="2"/>
+            <g fill="none" stroke="#1e66f5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 32h40"/>
+              <path d="M32 12v40"/>
+            </g>
+            <g fill="none" stroke="#ef476f" stroke-width="3" stroke-linecap="round">
+              <path d="M20 20l24 24"/>
+              <path d="M44 20L20 44"/>
+            </g>
+            <circle cx="32" cy="32" r="6" fill="#1e66f5"/>
+          </svg>
+          <p>Expert automotive calibration and diagnostics. Safety meets precision.</p>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul class="list-plain">
+            <li><i class="fa-solid fa-phone"></i> <a href="tel:+11234567890">+1 (123) 456-7890</a></li>
+            <li><i class="fa-solid fa-envelope"></i> <a href="mailto:info@autocalib.com">info@autocalib.com</a></li>
+            <li><i class="fa-solid fa-location-dot"></i> 100 Calibration Way, Tech City</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Follow</h4>
+          <div class="socials">
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <p>© <span id="year"></span> Auto Calibration. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+    <script>
+      (function(){
+        const form = document.getElementById('contact-form');
+        const status = document.getElementById('form-status');
+        form.addEventListener('submit', function(e){
+          e.preventDefault();
+          status.textContent = 'Sending…';
+          setTimeout(()=>{ status.textContent = 'Thanks! We will get back to you shortly.'; form.reset(); }, 700);
+        });
+      })();
+    </script>
+  </body>
+  </html>
+
+

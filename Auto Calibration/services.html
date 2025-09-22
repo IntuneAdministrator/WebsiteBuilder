@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Services – ADAS calibration, camera/radar alignment, ECU updates, and diagnostics.">
+    <meta name="theme-color" content="#0d1b2a">
+    <title>Services • Auto Calibration</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header" id="top">
+      <div class="container header-inner">
+        <a class="brand" href="index.html" aria-label="Automotive Car Calibration Home">
+          <img src="assets/logo.svg" alt="Automotive Calibration Logo" width="40" height="40" />
+          <span>Auto Calibration</span>
+        </a>
+        <nav class="site-nav" aria-label="Primary">
+          <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">
+            <span class="sr-only">Toggle navigation</span>
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <ul id="nav-menu">
+            <li><a class="nav-link" href="index.html">Home</a></li>
+            <li><a class="nav-link" href="about.html">About</a></li>
+            <li><a class="nav-link active" href="services.html">Services</a></li>
+            <li><a class="nav-link" href="pricing.html">Pricing</a></li>
+            <li><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="section" aria-label="Service controls">
+        <div class="container" style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;justify-content:space-between">
+          <div style="display:flex;gap:12px;flex-wrap:wrap">
+            <label>
+              <span class="sr-only">Filter by category</span>
+              <select id="filter-category" class="btn btn-outline" style="padding:10px 12px">
+                <option value="all">All categories</option>
+                <option value="adas">ADAS</option>
+                <option value="alignment">Alignment</option>
+                <option value="ecu">ECU</option>
+                <option value="diagnostics">Diagnostics</option>
+              </select>
+            </label>
+            <label>
+              <span class="sr-only">Sort by</span>
+              <select id="sort-by" class="btn btn-outline" style="padding:10px 12px">
+                <option value="pop">Popularity</option>
+                <option value="name">Name (A–Z)</option>
+              </select>
+            </label>
+          </div>
+          
+        </div>
+      </section>
+
+      <section class="section" aria-label="Services list">
+        <div class="container cards-grid" id="services-grid">
+          <article id="adas" class="card reveal" data-category="adas" data-popularity="5" data-name="ADAS Calibration">
+            <div class="card-media">
+              <img loading="lazy" src="https://picsum.photos/seed/adas2/1600/900" alt="ADAS calibration board and camera alignment" />
+            </div>
+            <div class="card-body">
+              <h3>ADAS Calibration</h3>
+              <p>Align cameras and radar for lane-keep assist, ACC, and emergency braking.</p>
+              <a class="btn btn-outline" href="#contact">Get Quote</a>
+            </div>
+          </article>
+
+          <article id="alignment" class="card reveal" data-category="alignment" data-popularity="4" data-name="Wheel Alignment">
+            <div class="card-media">
+              <img loading="lazy" src="https://picsum.photos/seed/alignment2/1600/900" alt="Wheel alignment rig in workshop" />
+            </div>
+            <div class="card-body">
+              <h3>Wheel Alignment</h3>
+              <p>Precision four-wheel alignment for handling, safety, and tire longevity.</p>
+              <a class="btn btn-outline" href="#contact">Get Quote</a>
+            </div>
+          </article>
+
+          <article id="ecu" class="card reveal" data-category="ecu" data-popularity="3" data-name="ECU Software Updates">
+            <div class="card-media">
+              <img loading="lazy" src="https://picsum.photos/seed/ecu2/1600/900" alt="ECU tuning with laptop connected" />
+            </div>
+            <div class="card-body">
+              <h3>ECU Software Updates</h3>
+              <p>OEM-compliant updates, coding, and parameter checks for optimal performance.</p>
+              <a class="btn btn-outline" href="#contact">Get Quote</a>
+            </div>
+          </article>
+
+          <article class="card reveal" data-category="diagnostics" data-popularity="2" data-name="Diagnostic Checks">
+            <div class="card-media">
+              <img loading="lazy" src="https://picsum.photos/seed/diagnostics/1600/900" alt="OBD diagnostics on vehicle" />
+            </div>
+            <div class="card-body">
+              <h3>Diagnostic Checks</h3>
+              <p>Comprehensive OBD and system scans with detailed reports and advice.</p>
+              <a class="btn btn-outline" href="#contact">Get Quote</a>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="36" height="36" role="img" aria-label="Automotive Calibration Logo">
+            <defs>
+              <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#1e66f5"/>
+                <stop offset="1" stop-color="#ef476f"/>
+              </linearGradient>
+            </defs>
+            <circle cx="32" cy="32" r="30" fill="url(#g)" opacity="0.15" stroke="#1e66f5" stroke-width="2"/>
+            <g fill="none" stroke="#1e66f5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 32h40"/>
+              <path d="M32 12v40"/>
+            </g>
+            <g fill="none" stroke="#ef476f" stroke-width="3" stroke-linecap="round">
+              <path d="M20 20l24 24"/>
+              <path d="M44 20L20 44"/>
+            </g>
+            <circle cx="32" cy="32" r="6" fill="#1e66f5"/>
+          </svg>
+          <p>Expert automotive calibration and diagnostics. Safety meets precision.</p>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul class="list-plain">
+            <li><i class="fa-solid fa-phone"></i> <a href="tel:+11234567890">+1 (123) 456-7890</a></li>
+            <li><i class="fa-solid fa-envelope"></i> <a href="mailto:info@autocalib.com">info@autocalib.com</a></li>
+            <li><i class="fa-solid fa-location-dot"></i> 100 Calibration Way, Tech City</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Follow</h4>
+          <div class="socials">
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <p>© <span id="year"></span> Auto Calibration. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+    <script>
+      (function(){
+        const grid = document.getElementById('services-grid');
+        const filterSel = document.getElementById('filter-category');
+        const sortSel = document.getElementById('sort-by');
+        const getCards = () => Array.from(grid.children);
+        function apply(){
+          const cat = filterSel.value;
+          getCards().forEach(card => {
+            const match = (cat==='all') || card.dataset.category===cat;
+            card.style.display = match ? '' : 'none';
+          });
+          const visible = getCards().filter(c=>c.style.display!=='none');
+          const by = sortSel.value;
+          visible.sort((a,b)=>{
+            if (by==='name') return a.dataset.name.localeCompare(b.dataset.name);
+            return Number(b.dataset.popularity)-Number(a.dataset.popularity);
+          });
+          visible.forEach(c=>grid.appendChild(c));
+        }
+        filterSel.addEventListener('change', apply);
+        sortSel.addEventListener('change', apply);
+        apply();
+      })();
+    </script>
+  </body>
+  </html>
+
+
