@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Transparent pricing for property management and consultancy plans." />
+    <title>Pricing | PrimeNest Realty</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkfK8uPq9vyvyehZ9YKm1bVZbWcv16O3EOai9nBVkZ6Qq0EV4rY6fW9sg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="./scripts/main.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-container">
+        <a class="logo" href="./index.html" aria-label="PrimeNest Realty home">
+          <img src="./assets/logo.svg" alt="PrimeNest Realty logo" width="36" height="36" />
+          <span>PrimeNest Realty</span>
+        </a>
+        <nav class="site-nav" aria-label="Primary">
+          <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+          </button>
+          <ul>
+            <li><a class="nav-link" href="./index.html">Home</a></li>
+            <li><a class="nav-link" href="./about.html">About</a></li>
+            <li><a class="nav-link" href="./services.html">Services</a></li>
+            <li><a class="nav-link active" href="#">Pricing</a></li>
+            <li><a class="nav-link" href="./contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="section container">
+      <header class="section-header">
+        <h1>Pricing</h1>
+        <p>Choose a plan that fits your goals. Cancel anytime.</p>
+      </header>
+
+      <div class="pricing-grid">
+        <article class="price-card reveal">
+          <h3>Basic</h3>
+          <p class="price"><span>$</span>199<span>/mo</span></p>
+          <ul class="features">
+            <li>Listing syndication</li>
+            <li>Tenant screening</li>
+            <li>Email support</li>
+          </ul>
+          <button class="btn btn-outline">Choose Basic</button>
+        </article>
+        <article class="price-card featured reveal">
+          <h3>Standard</h3>
+          <p class="price"><span>$</span>399<span>/mo</span></p>
+          <ul class="features">
+            <li>Everything in Basic</li>
+            <li>Maintenance coordination</li>
+            <li>Monthly reporting</li>
+          </ul>
+          <button class="btn btn-primary">Choose Standard</button>
+        </article>
+        <article class="price-card reveal">
+          <h3>Premium</h3>
+          <p class="price"><span>$</span>799<span>/mo</span></p>
+          <ul class="features">
+            <li>Everything in Standard</li>
+            <li>Dedicated account manager</li>
+            <li>Priority support</li>
+          </ul>
+          <button class="btn btn-outline">Choose Premium</button>
+        </article>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="logo" href="./index.html">
+            <img src="./assets/logo.svg" alt="PrimeNest Realty logo" width="28" height="28" />
+            <span>PrimeNest Realty</span>
+          </a>
+          <p>© <span id="year"></span> PrimeNest Realty. All rights reserved.</p>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <p>123 Market Street, Suite 400, San Francisco, CA</p>
+          <p><a href="tel:+14155550123">+1 (415) 555-0123</a> • <a href="mailto:hello@primenest.com">hello@primenest.com</a></p>
+        </div>
+        <div>
+          <h4>Follow</h4>
+          <nav aria-label="Social">
+            <a href="#" aria-label="Instagram"><img src="./assets/icons/instagram.svg" alt="Instagram" width="20" height="20" /></a>
+            <a href="#" aria-label="Twitter"><img src="./assets/icons/x.svg" alt="Twitter (X)" width="20" height="20" /></a>
+            <a href="#" aria-label="LinkedIn"><img src="./assets/icons/linkedin.svg" alt="LinkedIn" width="20" height="20" /></a>
+          </nav>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <nav aria-label="Footer">
+            <p><a href="./about.html">About</a></p>
+            <p><a href="./services.html">Services</a></p>
+            <p><a href="./pricing.html">Pricing</a></p>
+            <p><a href="./contact.html">Contact</a></p>
+          </nav>
+        </div>
+      </div>
+    </footer>
+
+    <button id="backToTop" aria-label="Back to top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+  </body>
+  </html>
+
+

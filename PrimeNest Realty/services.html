@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Explore real estate services: buying, selling, renting, and property management." />
+    <title>Services | PrimeNest Realty</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkfK8uPq9vyvyehZ9YKm1bVZbWcv16O3EOai9nBVkZ6Qq0EV4rY6fW9sg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="./scripts/main.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-container">
+        <a class="logo" href="./index.html" aria-label="PrimeNest Realty home">
+          <img src="./assets/logo.svg" alt="PrimeNest Realty logo" width="36" height="36" />
+          <span>PrimeNest Realty</span>
+        </a>
+        <nav class="site-nav" aria-label="Primary">
+          <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+          </button>
+          <ul>
+            <li><a class="nav-link" href="./index.html">Home</a></li>
+            <li><a class="nav-link" href="./about.html">About</a></li>
+            <li><a class="nav-link active" href="#">Services</a></li>
+            <li><a class="nav-link" href="./pricing.html">Pricing</a></li>
+            <li><a class="nav-link" href="./contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="section container">
+      <header class="section-header">
+        <h1>Our Services</h1>
+        <p>Tailored solutions for residential, commercial, and luxury properties.</p>
+        <div class="controls">
+          <label>
+            <span>Type</span>
+            <select id="filterType">
+              <option value="all" selected>All</option>
+              <option value="residential">Residential</option>
+              <option value="commercial">Commercial</option>
+              <option value="luxury">Luxury</option>
+            </select>
+          </label>
+          <label>
+            <span>Sort</span>
+            <select id="sortBy">
+              <option value="az" selected>Title A–Z</option>
+              <option value="za">Title Z–A</option>
+            </select>
+          </label>
+          <a class="btn btn-outline" id="downloadServices" href="data:application/pdf;base64,JVBERi0xLjQKJcTl8uXrp/Og0MTGCjEgMCBvYmoKPDwvVHlwZSAvQ2F0YWxvZyAvUGFnZXMgMiAwIFI+PgplbmRvYmoKMiAwIG9iago8PC9UeXBlIC9QYWdlcyAvQ291bnQgMSAvS2lkcyBbMyAwIFJdPj4KZW5kb2JqCjMgMCBvYmoKPDwvVHlwZSAvUGFnZSAvUGFyZW50IDIgMCBSIC9NZWRpYUJveCBbMCAwIDU5NSA4NDJdIC9Db250ZW50cyA0IDAgUiA+PgplbmRvYmoKNCAwIG9iago8PC9MZW5ndGggNjc+PgpzdHJlYW0KQlQKL0YxIDI0IFRmCjEwMCA3NTAKTQo8PCAvRG8gQkQ+PgpUZAooU2VydmljZXMgQnJvY2h1cmUpIFRqCkVUCmV0CmVuZHN0cmVhbQplbmRvYmoKeHJlZgowIDYKMDM2NAowMDAwMDAwMDAwIDY1NTM1IGYgCjAwMDAwMDAxMTAgMDAwMDAgbiAKMDAwMDAwMDA1NCAwMDAwMCBuIAowMDAwMDAwMTYzIDAwMDAwIG4gCjAwMDAwMDAyNDkgMDAwMDAgbiAKdHJhaWxlcgo8PC9TaXplIDYgL1Jvb3QgMSAwIFI+PgpzdGFydHhyZWYKNjY3CiUlRU9GCg==" download="Services.pdf">Download Services.pdf</a>
+        </div>
+      </header>
+
+      <div id="servicesGrid" class="grid cards services">
+        <article class="card reveal" data-type="residential">
+          <div class="card-media">
+            <img src="https://image.pollinations.ai/prompt/family%20touring%20a%20modern%20home%20interior%2C%20bright%20and%20luxury%2C%20photorealistic" alt="Home buying consultation" loading="lazy" onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%271200%27 height=%27800%27%3E%3Crect width=%27100%25%27 height=%27100%25%27 fill=%27%230b1e3b%27/%3E%3Ctext x=%2750%25%27 y=%2750%25%27 dominant-baseline=%27middle%27 text-anchor=%27middle%27 fill=%27%23e5e7eb%27 font-size=%2724%27%3EImage unavailable%3C/text%3E%3C/svg%3E';" />
+          </div>
+          <div class="card-content">
+            <h3>Home Buying</h3>
+            <p>End-to-end guidance from search to closing for first-time and seasoned buyers.</p>
+            <button class="btn btn-outline">Learn More</button>
+          </div>
+        </article>
+        <article class="card reveal" data-type="residential">
+          <div class="card-media">
+            <img src="https://image.pollinations.ai/prompt/real%20estate%20agent%20showing%20modern%20house%20to%20clients%2C%20photorealistic%2C%20sunny" alt="Home selling strategy" loading="lazy" onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%271200%27 height=%27800%27%3E%3Crect width=%27100%25%27 height=%27100%25%27 fill=%27%230b1e3b%27/%3E%3Ctext x=%2750%25%27 y=%2750%25%27 dominant-baseline=%27middle%27 text-anchor=%27middle%27 fill=%27%23e5e7eb%27 font-size=%2724%27%3EImage unavailable%3C/text%3E%3C/svg%3E';" />
+          </div>
+          <div class="card-content">
+            <h3>Home Selling</h3>
+            <p>Staging, marketing, and negotiation to achieve the best sale price.</p>
+            <button class="btn btn-outline">Learn More</button>
+          </div>
+        </article>
+        <article class="card reveal" data-type="commercial">
+          <div class="card-media">
+            <img src="https://image.pollinations.ai/prompt/modern%20office%20building%20exterior%20glass%20facade%2C%20photorealistic%2C%20daylight" alt="Commercial leasing" loading="lazy" onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%271200%27 height=%27800%27%3E%3Crect width=%27100%25%27 height=%27100%25%27 fill=%27%230b1e3b%27/%3E%3Ctext x=%2750%25%27 y=%2750%25%27 dominant-baseline=%27middle%27 text-anchor=%27middle%27 fill=%27%23e5e7eb%27 font-size=%2724%27%3EImage unavailable%3C/text%3E%3C/svg%3E';" />
+          </div>
+          <div class="card-content">
+            <h3>Commercial Leasing</h3>
+            <p>Site selection and lease negotiation for offices and retail spaces.</p>
+            <button class="btn btn-outline">Learn More</button>
+          </div>
+        </article>
+        <article class="card reveal" data-type="luxury">
+          <div class="card-media">
+            <img src="https://image.pollinations.ai/prompt/luxury%20mansion%20interior%20with%20grand%20staircase%20and%20chandeliers%2C%20ultra%20realistic" alt="Luxury portfolio" loading="lazy" onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%271200%27 height=%27800%27%3E%3Crect width=%27100%25%27 height=%27100%25%27 fill=%27%230b1e3b%27/%3E%3Ctext x=%2750%25%27 y=%2750%25%27 dominant-baseline=%27middle%27 text-anchor=%27middle%27 fill=%27%23e5e7eb%27 font-size=%2724%27%3EImage unavailable%3C/text%3E%3C/svg%3E';" />
+          </div>
+          <div class="card-content">
+            <h3>Luxury Portfolio</h3>
+            <p>Exclusive access to premium residences with white-glove service.</p>
+            <button class="btn btn-outline">Learn More</button>
+          </div>
+        </article>
+        <article class="card reveal" data-type="commercial">
+          <div class="card-media">
+            <img src="https://image.pollinations.ai/prompt/apartment%20complex%20with%20well%20maintained%20landscaping%2C%20photorealistic%2C%20sunset" alt="Property management" loading="lazy" onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%271200%27 height=%27800%27%3E%3Crect width=%27100%25%27 height=%27100%25%27 fill=%27%230b1e3b%27/%3E%3Ctext x=%2750%25%27 y=%2750%25%27 dominant-baseline=%27middle%27 text-anchor=%27middle%27 fill=%27%23e5e7eb%27 font-size=%2724%27%3EImage unavailable%3C/text%3E%3C/svg%3E';" />
+          </div>
+          <div class="card-content">
+            <h3>Property Management</h3>
+            <p>Tenant screening, maintenance, and financial reporting made effortless.</p>
+            <button class="btn btn-outline">Learn More</button>
+          </div>
+        </article>
+        <article class="card reveal" data-type="luxury">
+          <div class="card-media">
+            <img src="https://image.pollinations.ai/prompt/real%20estate%20investment%20team%20reviewing%20market%20charts%20in%20modern%20office%2C%20photorealistic" alt="Investment advisory" loading="lazy" onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%271200%27 height=%27800%27%3E%3Crect width=%27100%25%27 height=%27100%25%27 fill=%27%230b1e3b%27/%3E%3Ctext x=%2750%25%27 y=%2750%25%27 dominant-baseline=%27middle%27 text-anchor=%27middle%27 fill=%27%23e5e7eb%27 font-size=%2724%27%3EImage unavailable%3C/text%3E%3C/svg%3E';" />
+          </div>
+          <div class="card-content">
+            <h3>Investment Advisory</h3>
+            <p>Market research and portfolio strategy for high-yield assets.</p>
+            <button class="btn btn-outline">Learn More</button>
+          </div>
+        </article>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="logo" href="./index.html">
+            <img src="./assets/logo.svg" alt="PrimeNest Realty logo" width="28" height="28" />
+            <span>PrimeNest Realty</span>
+          </a>
+          <p>© <span id="year"></span> PrimeNest Realty. All rights reserved.</p>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <p>123 Market Street, Suite 400, San Francisco, CA</p>
+          <p><a href="tel:+14155550123">+1 (415) 555-0123</a> • <a href="mailto:hello@primenest.com">hello@primenest.com</a></p>
+        </div>
+        <div>
+          <h4>Follow</h4>
+          <nav aria-label="Social">
+            <a href="#" aria-label="Instagram"><img src="./assets/icons/instagram.svg" alt="Instagram" width="20" height="20" /></a>
+            <a href="#" aria-label="Twitter"><img src="./assets/icons/x.svg" alt="Twitter (X)" width="20" height="20" /></a>
+            <a href="#" aria-label="LinkedIn"><img src="./assets/icons/linkedin.svg" alt="LinkedIn" width="20" height="20" /></a>
+          </nav>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <nav aria-label="Footer">
+            <p><a href="./about.html">About</a></p>
+            <p><a href="./services.html">Services</a></p>
+            <p><a href="./pricing.html">Pricing</a></p>
+            <p><a href="./contact.html">Contact</a></p>
+          </nav>
+        </div>
+      </div>
+    </footer>
+
+    <button id="backToTop" aria-label="Back to top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+  </body>
+  </html>
+
+

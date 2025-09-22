@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Get in touch with PrimeNest Realty. Send a message or visit our office." />
+    <title>Contact | PrimeNest Realty</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkfK8uPq9vyvyehZ9YKm1bVZbWcv16O3EOai9nBVkZ6Qq0EV4rY6fW9sg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="./scripts/main.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-container">
+        <a class="logo" href="./index.html" aria-label="PrimeNest Realty home">
+          <img src="./assets/logo.svg" alt="PrimeNest Realty logo" width="36" height="36" />
+          <span>PrimeNest Realty</span>
+        </a>
+        <nav class="site-nav" aria-label="Primary">
+          <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+          </button>
+          <ul>
+            <li><a class="nav-link" href="./index.html">Home</a></li>
+            <li><a class="nav-link" href="./about.html">About</a></li>
+            <li><a class="nav-link" href="./services.html">Services</a></li>
+            <li><a class="nav-link" href="./pricing.html">Pricing</a></li>
+            <li><a class="nav-link active" href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="section container contact-grid">
+      <section>
+        <header class="section-header">
+          <h1>Contact Us</h1>
+          <p>We'd love to hear from you. Send a message and we'll respond soon.</p>
+        </header>
+        <form class="card form" id="contactForm" novalidate>
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Jane Doe" required />
+            <small class="error" aria-live="polite"></small>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="jane@example.com" required />
+            <small class="error" aria-live="polite"></small>
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="How can we help?" required></textarea>
+            <small class="error" aria-live="polite"></small>
+          </div>
+          <button class="btn btn-primary" type="submit">Send Message</button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+
+      <aside class="contact-aside">
+        <div class="map card">
+          <iframe title="PrimeNest Office Map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.099302015472!2d-122.40137852342896!3d37.7936389719825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064da2b6f4b%3A0x4a0d7c3b1b8be8f0!2sSalesforce%20Tower!5e0!3m2!1sen!2sus!4v1681500000000!5m2!1sen!2sus" width="100%" height="280" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        
+      </aside>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="logo" href="./index.html">
+            <img src="./assets/logo.svg" alt="PrimeNest Realty logo" width="28" height="28" />
+            <span>PrimeNest Realty</span>
+          </a>
+          <p>© <span id="year"></span> PrimeNest Realty. All rights reserved.</p>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <p>123 Market Street, Suite 400, San Francisco, CA</p>
+          <p><a href="tel:+14155550123">+1 (415) 555-0123</a> • <a href="mailto:hello@primenest.com">hello@primenest.com</a></p>
+        </div>
+        <div>
+          <h4>Follow</h4>
+          <nav aria-label="Social">
+            <a href="#" aria-label="Instagram"><img src="./assets/icons/instagram.svg" alt="Instagram" width="20" height="20" /></a>
+            <a href="#" aria-label="Twitter"><img src="./assets/icons/x.svg" alt="Twitter (X)" width="20" height="20" /></a>
+            <a href="#" aria-label="LinkedIn"><img src="./assets/icons/linkedin.svg" alt="LinkedIn" width="20" height="20" /></a>
+          </nav>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <nav aria-label="Footer">
+            <p><a href="./about.html">About</a></p>
+            <p><a href="./services.html">Services</a></p>
+            <p><a href="./pricing.html">Pricing</a></p>
+            <p><a href="./contact.html">Contact</a></p>
+          </nav>
+        </div>
+      </div>
+    </footer>
+
+    <button id="backToTop" aria-label="Back to top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+  </body>
+  </html>
+
+
