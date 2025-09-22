@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Pricing | CloudWorks IT</title>
+	<meta name="description" content="Simple, transparent pricing for Microsoft 365 and remote IT support services.">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+	<header class="header">
+		<div class="container navbar">
+			<a class="brand" href="index.html"><img src="assets/logo.svg" alt="CloudWorks logo" width="36" height="36"> <span>CloudWorks IT</span></a>
+			<nav class="nav" data-nav>
+				<a href="index.html#home">Home</a>
+				<a href="about.html">About</a>
+				<a href="services.html">Services</a>
+				<a href="pricing.html" class="active">Pricing</a>
+				<a href="contact.html">Contact</a>
+			</nav>
+			<button class="menu-toggle" aria-label="Open menu" data-menu-toggle><i class="fa-solid fa-bars"></i></button>
+		</div>
+	</header>
+	<main>
+		<section class="section">
+			<div class="container">
+				<div class="section-header center">
+					<h1 class="reveal">Pricing Plans</h1>
+					<p class="muted reveal">Choose the plan that fits your team. Upgrade anytime.</p>
+				</div>
+				<div class="pricing-grid">
+					<article class="price-card reveal">
+						<h3>Basic</h3>
+						<p class="price">$49/mo</p>
+						<ul class="features">
+							<li><i class="fa-solid fa-check"></i> Remote helpdesk (email)</li>
+							<li><i class="fa-solid fa-check"></i> M365 guidance</li>
+							<li><i class="fa-solid fa-check"></i> Security best practices</li>
+						</ul>
+						<div class="spacer"></div>
+						<a class="btn" href="contact.html">Choose Basic</a>
+					</article>
+					<article class="price-card highlight reveal">
+						<h3>Standard</h3>
+						<p class="price">$129/mo</p>
+						<ul class="features">
+							<li><i class="fa-solid fa-check"></i> Priority helpdesk (email + chat)</li>
+							<li><i class="fa-solid fa-check"></i> Teams & SharePoint setup</li>
+							<li><i class="fa-solid fa-check"></i> MFA & device compliance</li>
+						</ul>
+						<div class="spacer"></div>
+						<a class="btn" href="contact.html">Choose Standard</a>
+					</article>
+					<article class="price-card reveal">
+						<h3>Premium</h3>
+						<p class="price">$249/mo</p>
+						<ul class="features">
+							<li><i class="fa-solid fa-check"></i> 24/7 helpdesk (email, chat, phone)</li>
+							<li><i class="fa-solid fa-check"></i> Advanced security + Defender</li>
+							<li><i class="fa-solid fa-check"></i> Onboarding/offboarding automation</li>
+						</ul>
+						<div class="spacer"></div>
+						<a class="btn" href="contact.html">Choose Premium</a>
+					</article>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer class="footer">
+		<div class="container grid">
+			<div><strong>CloudWorks IT</strong><p class="muted">Microsoft 365, remote IT support, and cloud security for SMBs.</p></div>
+			<div><strong>Contact</strong><p class="muted">support@cloudworks.example<br>+1 (555) 123-4567</p></div>
+			<div><strong>Follow</strong><div class="socials"><a href="#"><i class="fa-brands fa-x-twitter"></i></a><a href="#"><i class="fa-brands fa-linkedin"></i></a><a href="#"><i class="fa-brands fa-github"></i></a></div></div>
+		</div>
+		<div class="container" style="margin-top:12px;">
+			<small class="muted">© <span id="year"></span> CloudWorks IT. All rights reserved.</small>
+		</div>
+	</footer>
+	<a href="#" class="back-to-top" data-back-to-top aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></a>
+	<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+	<script src="js/main.js" defer></script>
+</body>
+</html>

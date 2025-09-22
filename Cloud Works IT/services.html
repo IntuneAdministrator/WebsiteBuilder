@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Services | CloudWorks IT</title>
+	<meta name="description" content="Microsoft 365 setup, remote IT support, and cloud security services.">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+	<header class="header">
+		<div class="container navbar">
+			<a class="brand" href="index.html"><img src="assets/logo.svg" alt="CloudWorks logo" width="36" height="36"> <span>CloudWorks IT</span></a>
+			<nav class="nav" data-nav>
+				<a href="index.html#home">Home</a>
+				<a href="about.html">About</a>
+				<a href="services.html" class="active">Services</a>
+				<a href="pricing.html">Pricing</a>
+				<a href="contact.html">Contact</a>
+			</nav>
+			<button class="menu-toggle" aria-label="Open menu" data-menu-toggle><i class="fa-solid fa-bars"></i></button>
+		</div>
+	</header>
+	<main>
+		<section class="section">
+			<div class="container">
+				<div class="section-header">
+					<h1 class="reveal">Our Services</h1>
+					<p class="muted reveal">Flexible solutions for Microsoft 365, remote support, and cloud security.</p>
+				</div>
+
+				<div class="filters reveal">
+					<select class="select" data-filter-category aria-label="Category">
+						<option value="all">All Categories</option>
+						<option value="m365">Microsoft 365</option>
+						<option value="support">Support</option>
+						<option value="security">Security</option>
+					</select>
+					<select class="select" data-sort aria-label="Sort by">
+						<option value="popular">Most Popular</option>
+						<option value="name">Name (A-Z)</option>
+					</select>
+					<a class="btn secondary" href="assets/Services.pdf" download>
+						<i class="fa-solid fa-file-arrow-down"></i> Download Services PDF
+					</a>
+				</div>
+
+				<div class="cards" data-services-grid>
+					<article class="card reveal" data-service-item data-category="m365" data-name="Microsoft 365 Setup" data-popularity="98">
+						<div class="media"><img data-src="https://images.unsplash.com/photo-1527443154391-507e9dc6c5cc?q=80&w=2070&auto=format&fit=crop" alt="Microsoft 365 setup" loading="lazy"></div>
+						<div class="content">
+							<h3>Microsoft 365 Setup</h3>
+							<p>Tenant configuration, licensing, Teams, SharePoint, Exchange, security baselines.</p>
+							<div class="actions"><a class="btn" href="contact.html">Get Quote</a></div>
+						</div>
+					</article>
+					<article class="card reveal" data-service-item data-category="support" data-name="Remote IT Support" data-popularity="95">
+						<div class="media"><img data-src="https://images.unsplash.com/photo-1525182008055-f88b95ff7980?q=80&w=2069&auto=format&fit=crop" alt="Remote IT support" loading="lazy"></div>
+						<div class="content">
+							<h3>Remote IT Support</h3>
+							<p>Helpdesk, remote remediation, device management, and onboarding/offboarding.</p>
+							<div class="actions"><a class="btn" href="contact.html">Start Support</a></div>
+						</div>
+					</article>
+					<article class="card reveal" data-service-item data-category="security" data-name="Cloud Security" data-popularity="90">
+						<div class="media"><img data-src="https://images.unsplash.com/photo-1510511459019-5dda7724fd87?q=80&w=2070&auto=format&fit=crop" alt="Cloud security" loading="lazy"></div>
+						<div class="content">
+							<h3>Cloud Security</h3>
+							<p>Conditional access, MFA, Defender for Business, device compliance, zero trust.</p>
+							<div class="actions"><a class="btn" href="contact.html">Secure Now</a></div>
+						</div>
+					</article>
+					<article class="card reveal" data-service-item data-category="m365" data-name="SharePoint Intranet" data-popularity="85">
+						<div class="media"><img data-src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=2071&auto=format&fit=crop" alt="SharePoint intranet" loading="lazy"></div>
+						<div class="content">
+							<h3>SharePoint Intranet</h3>
+							<p>Modern intranet, news, docs, and team sites with permissions and governance.</p>
+							<div class="actions"><a class="btn" href="contact.html">Learn More</a></div>
+						</div>
+					</article>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer class="footer">
+		<div class="container grid">
+			<div><strong>CloudWorks IT</strong><p class="muted">Microsoft 365, remote IT support, and cloud security for SMBs.</p></div>
+			<div><strong>Contact</strong><p class="muted">support@cloudworks.example<br>+1 (555) 123-4567</p></div>
+			<div><strong>Follow</strong><div class="socials"><a href="#"><i class="fa-brands fa-x-twitter"></i></a><a href="#"><i class="fa-brands fa-linkedin"></i></a><a href="#"><i class="fa-brands fa-github"></i></a></div></div>
+		</div>
+		<div class="container" style="margin-top:12px;">
+			<small class="muted">© <span id="year"></span> CloudWorks IT. All rights reserved.</small>
+		</div>
+	</footer>
+	<a href="#" class="back-to-top" data-back-to-top aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></a>
+	<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+	<script src="js/main.js" defer></script>
+</body>
+</html>
