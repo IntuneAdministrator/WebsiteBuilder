@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Checkout - review your cart and enter shipping details.">
+    <meta name="theme-color" content="#1a2a44">
+    <title>Checkout | Modern E‑Commerce Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <script defer src="https://kit.fontawesome.com/ea27a1f1a0.js" crossorigin="anonymous"></script>
+    <script defer src="assets/js/components.js"></script>
+    <script defer src="assets/js/main.js"></script>
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header id="site-header"></header>
+    <main id="main" class="section container">
+        <h1>Checkout</h1>
+        <div class="contact-grid">
+            <div class="card">
+                <h2>Order Summary</h2>
+                <div id="checkout-summary"></div>
+                <div style="display:flex; justify-content: space-between; margin-top: 12px;">
+                    <strong>Total: <span id="checkout-total">$0</span></strong>
+                    <button class="btn btn--accent" id="place-order"><i class="fa-solid fa-check"></i> Place Order</button>
+                </div>
+            </div>
+            <form class="contact-form" id="shipping-form" novalidate>
+                <div class="form-row">
+                    <label for="fullname">Full Name</label>
+                    <input type="text" id="fullname" required>
+                </div>
+                <div class="form-row">
+                    <label for="address">Address</label>
+                    <input type="text" id="address" required>
+                </div>
+                <div class="form-row">
+                    <label for="city">City</label>
+                    <input type="text" id="city" required>
+                </div>
+                <div class="form-row">
+                    <label for="email2">Email</label>
+                    <input type="email" id="email2" required>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer id="site-footer"></footer>
+</body>
+</html>
+
+

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse our product catalog. Filter by category, price, brand, and rating. Sort by popularity, price, or new arrivals.">
+    <meta name="theme-color" content="#1a2a44">
+    <title>Products | Modern E‑Commerce Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <script defer src="https://kit.fontawesome.com/ea27a1f1a0.js" crossorigin="anonymous"></script>
+    <script defer src="assets/js/components.js"></script>
+    <script defer src="assets/js/main.js"></script>
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header id="site-header"></header>
+    <main id="main" class="section container">
+        <div class="products-head">
+            <h1>Product Catalog</h1>
+            <div class="actions">
+                <a class="btn btn--ghost" href="assets/Products.pdf" download><i class="fa-regular fa-file-pdf"></i> Download Catalog</a>
+            </div>
+        </div>
+
+        <div class="filters">
+            <div class="filter-group">
+                <label for="filter-category">Category</label>
+                <select id="filter-category">
+                    <option value="all">All</option>
+                    <option value="electronics">Electronics</option>
+                    <option value="home">Home</option>
+                    <option value="fashion">Fashion</option>
+                    <option value="accessories">Accessories</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="filter-brand">Brand</label>
+                <select id="filter-brand">
+                    <option value="all">All</option>
+                    <option value="acme">ACME</option>
+                    <option value="nimbus">Nimbus</option>
+                    <option value="aurora">Aurora</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="filter-price">Max Price</label>
+                <input id="filter-price" type="range" min="10" max="1000" value="1000">
+                <span id="price-value">$1000</span>
+            </div>
+            <div class="filter-group">
+                <label for="filter-rating">Min Rating</label>
+                <select id="filter-rating">
+                    <option value="0">Any</option>
+                    <option value="3">3+</option>
+                    <option value="4">4+</option>
+                    <option value="4.5">4.5+</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="sort-by">Sort By</label>
+                <select id="sort-by">
+                    <option value="popularity">Popularity</option>
+                    <option value="price-asc">Price: Low to High</option>
+                    <option value="price-desc">Price: High to Low</option>
+                    <option value="newest">Newest</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="product-grid" data-grid="catalog">
+            <!-- Injected by JS -->
+        </div>
+    </main>
+
+    <div class="modal" id="quick-view" aria-hidden="true" role="dialog" aria-modal="true">
+        <div class="modal__dialog" role="document">
+            <button class="modal__close" data-modal-close aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+            <div class="modal__content"><!-- injected --></div>
+        </div>
+        <div class="modal__backdrop" data-modal-close></div>
+    </div>
+
+    <footer id="site-footer"></footer>
+    <button class="to-top" aria-label="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+</body>
+</html>
+
+

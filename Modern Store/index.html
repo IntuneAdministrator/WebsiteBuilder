@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Modern, responsive, and SEO-friendly e-commerce store. Shop the best products online with great deals and fast shipping.">
+    <meta name="theme-color" content="#1a2a44">
+    <title>Home | Modern E‑Commerce Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <script defer src="https://kit.fontawesome.com/ea27a1f1a0.js" crossorigin="anonymous"></script>
+    <script defer src="assets/js/components.js"></script>
+    <script defer src="assets/js/main.js"></script>
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header id="site-header"></header>
+
+    <main id="main">
+        <!-- Hero Section -->
+        <section id="hero" class="section hero">
+            <div class="hero__media" role="img" aria-label="Featured lifestyle scene">
+                <img src="https://images.unsplash.com/photo-1545239351-1141bd82e8a6?q=80&w=2000&auto=format&fit=crop" alt="Lifestyle scene featuring products" loading="eager" onerror="this.onerror=null;this.src='assets/img/placeholder.svg';">
+            </div>
+            <div class="hero__content container">
+                <h1 class="hero__title">Shop the Best Products Online</h1>
+                <p class="hero__tagline">Quality products delivered to your door.</p>
+                <div class="hero__actions">
+                    <a href="products.html" class="btn btn--accent"><i class="fa-solid fa-cart-shopping"></i> Shop Now</a>
+                    <a href="pricing.html" class="btn btn--accent">View Deals</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Products -->
+        <section id="featured" class="section container">
+            <div class="section__head">
+                <h2>Featured Products</h2>
+                <a href="products.html" class="link">View all</a>
+            </div>
+            <div class="product-grid" data-grid="featured">
+                <!-- Injected by JS -->
+            </div>
+        </section>
+
+        <!-- Promotions / Offers -->
+        <section id="promotions" class="section section--muted">
+            <div class="container">
+                <div class="section__head">
+                    <h2>Latest Offers</h2>
+                </div>
+                <div class="promo-grid">
+                    <article class="promo-card">
+                        <div class="promo-card__media">
+                            <img src="https://images.unsplash.com/photo-1512295767273-ac109ac3acfa?q=80&w=1600&auto=format&fit=crop" alt="Discount gadgets" loading="lazy" onerror="this.onerror=null;this.src='assets/img/placeholder.svg';">
+                        </div>
+                        <div class="promo-card__body">
+                            <h3>Up to 40% off Electronics</h3>
+                            <p>Top-rated gadgets at unbeatable prices for a limited time.</p>
+                            <a class="btn btn--ghost" href="pricing.html"><i class="fa-solid fa-tags"></i> See Deals</a>
+                        </div>
+                    </article>
+                    <article class="promo-card">
+                        <div class="promo-card__media">
+                            <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?q=80&w=1600&auto=format&fit=crop" alt="Home and lifestyle" loading="lazy" onerror="this.onerror=null;this.src='assets/img/placeholder.svg';">
+                        </div>
+                        <div class="promo-card__body">
+                            <h3>Home & Lifestyle Bundle</h3>
+                            <p>Save more with curated bundles for every room in your home.</p>
+                            <a class="btn btn--ghost" href="pricing.html"><i class="fa-solid fa-box"></i> Explore Bundles</a>
+                        </div>
+                    </article>
+                    <article class="promo-card">
+                        <div class="promo-card__media">
+                            <img src="https://images.unsplash.com/photo-1511499767150-a48a237f0083?q=80&w=1600&auto=format&fit=crop" alt="Fashion accessories" loading="lazy" onerror="this.onerror=null;this.src='assets/img/placeholder.svg';">
+                        </div>
+                        <div class="promo-card__body">
+                            <h3>New Season Arrivals</h3>
+                            <p>Fresh looks just dropped. Grab them before they sell out.</p>
+                            <a class="btn btn--ghost" href="products.html"><i class="fa-regular fa-star"></i> Shop New In</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="site-footer"></footer>
+
+    <div class="modal" id="cart-modal" aria-hidden="true" role="dialog" aria-modal="true">
+        <div class="modal__dialog" role="document">
+            <button class="modal__close" data-modal-close aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+            <div class="modal__content">
+                <h2>Your Cart</h2>
+                <div id="cart-items"></div>
+                <div style="display:flex; justify-content: space-between; align-items:center; margin-top:12px;">
+                    <strong>Total: <span id="cart-total">$0</span></strong>
+                    <button class="btn btn--accent" id="checkout-btn"><i class="fa-solid fa-credit-card"></i> Checkout</button>
+                </div>
+            </div>
+        </div>
+        <div class="modal__backdrop" data-modal-close></div>
+    </div>
+
+    <button class="to-top" aria-label="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+</body>
+</html>
+
+
