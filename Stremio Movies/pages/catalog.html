@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="auto">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Catalog — Streamio</title>
+    <meta name="description" content="Browse movies and series. Filter by genre, year, rating, language." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>🎬</text></svg>">
+    <script defer src="https://kit.fontawesome.com/4c0c2c2d75.js" crossorigin="anonymous"></script>
+    <script defer src="../js/app.js"></script>
+    <script defer>
+      document.addEventListener('DOMContentLoaded', () => {
+        const params = new URLSearchParams(location.search);
+        const genre = params.get('genre');
+        if (genre) {
+          const genreSel = document.getElementById('filterGenre');
+          if (genreSel) genreSel.value = genre;
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" aria-label="Primary">
+      <div class="container nav">
+        <a href="../index.html" class="brand" aria-label="Streamio Home" style="position:absolute; left:0">
+          <span class="brand-icon">🎬</span>
+          <span class="brand-text">Streamio</span>
+        </a>
+        <nav class="nav-links" aria-label="Main navigation" style="margin:0 auto">
+          <a href="../index.html">Home</a>
+          <a class="active" href="./catalog.html">Catalog</a>
+          <a href="./pricing.html">Pricing</a>
+          <a href="./about.html">About</a>
+          <a href="./contact.html">Contact</a>
+        </nav>
+        
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="section" aria-label="Filters">
+        <div class="container tile" style="padding:1rem; display:grid; gap:.75rem; align-items:end; grid-template-columns:2fr repeat(5, 1fr)">
+          <label>
+            <span>Search</span>
+            <input type="search" placeholder="Search title…" style="width:100%; margin-top:.25rem" />
+          </label>
+          <label>
+            <span>Genre</span>
+            <select id="filterGenre" style="width:100%; margin-top:.25rem">
+              <option value="">All</option>
+              <option>Action</option>
+              <option>Drama</option>
+              <option>Comedy</option>
+              <option>Sci-Fi</option>
+              <option>Horror</option>
+            </select>
+          </label>
+          <label>
+            <span>Year</span>
+            <select style="width:100%; margin-top:.25rem">
+              <option value="">Any</option>
+              <option>2025</option>
+              <option>2024</option>
+              <option>2023</option>
+              <option>2022</option>
+            </select>
+          </label>
+          <label>
+            <span>Rating</span>
+            <select style="width:100%; margin-top:.25rem">
+              <option value="">Any</option>
+              <option>4★+</option>
+              <option>3★+</option>
+            </select>
+          </label>
+          <label>
+            <span>Language</span>
+            <select style="width:100%; margin-top:.25rem">
+              <option value="">Any</option>
+              <option>EN</option>
+              <option>ES</option>
+              <option>FR</option>
+              <option>DE</option>
+            </select>
+          </label>
+          <label>
+            <span>Sort</span>
+            <select style="width:100%; margin-top:.25rem">
+              <option>Popularity</option>
+              <option>Latest</option>
+              <option>Top Rated</option>
+            </select>
+          </label>
+        </div>
+      </section>
+
+      <section class="section" aria-label="Catalog grid">
+        <div class="container grid grid-5">
+          <!-- Sample catalog items -->
+          <article class="tile" tabindex="0">
+            <img loading="lazy" src="https://picsum.photos/seed/c1/400/600" alt="Movie poster" />
+            <div class="tile-overlay">
+              <h3>Afterlight</h3>
+              <p>Detective vs time. 2025 • Sci‑Fi</p>
+              <div class="tile-actions">
+                <button class="btn small secondary" data-open-trailer>Watch Trailer</button>
+              </div>
+            </div>
+          </article>
+          <article class="tile" tabindex="0">
+            <img loading="lazy" src="https://picsum.photos/seed/c2/400/600" alt="Series poster" />
+            <div class="tile-overlay">
+              <h3>Neon Streets</h3>
+              <p>Crime saga. 2025 • Crime</p>
+              <div class="tile-actions">
+                <button class="btn small secondary" data-open-trailer>Watch Trailer</button>
+              </div>
+            </div>
+          </article>
+          <article class="tile" tabindex="0">
+            <img loading="lazy" src="https://picsum.photos/seed/c3/400/600" alt="Movie poster" />
+            <div class="tile-overlay">
+              <h3>Golden Hour</h3>
+              <p>Journey of a lifetime. 2024 • Drama</p>
+              <div class="tile-actions">
+                <button class="btn small secondary" data-open-trailer>Watch Trailer</button>
+              </div>
+            </div>
+          </article>
+          <article class="tile" tabindex="0">
+            <img loading="lazy" src="https://picsum.photos/seed/c4/400/600" alt="Movie poster" />
+            <div class="tile-overlay">
+              <h3>Iron Skies</h3>
+              <p>Sky city defenders. 2019 • Action</p>
+              <div class="tile-actions">
+                <button class="btn small secondary" data-open-trailer>Watch Trailer</button>
+              </div>
+            </div>
+          </article>
+          <article class="tile" tabindex="0">
+            <img loading="lazy" src="https://picsum.photos/seed/c5/400/600" alt="Series poster" />
+            <div class="tile-overlay">
+              <h3>Everfall</h3>
+              <p>Seasons collide. 2024 • Fantasy</p>
+              <div class="tile-actions">
+                <button class="btn small secondary" data-open-trailer>Watch Trailer</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Add more as desired -->
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" aria-label="Footer">
+      <div class="container footer-grid">
+        <div>
+          <div class="brand brand-invert"><span class="brand-icon">🎬</span> <span class="brand-text">Streamio</span></div>
+          <p class="muted">Cinematic streaming platform for movies and series. Watch anywhere.</p>
+        </div>
+        <nav aria-label="Footer navigation" class="footer-links">
+          <a href="./about.html">About</a>
+          <a href="./catalog.html">Catalog</a>
+          <a href="./pricing.html">Pricing</a>
+          <a href="./contact.html">Contact</a>
+        </nav>
+        <div class="socials" aria-label="Social media">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <div style="margin-top:.75rem">
+            <strong>Support</strong>
+            <p class="muted" style="margin:.25rem 0 0">Email: support@streamio.example</p>
+            <p class="muted" style="margin:.15rem 0 0">Phone: +1 (555) 012-3456</p>
+          </div>
+        </div>
+      </div>
+      <div class="container tiny muted">© <span id="year"></span> Streamio. All rights reserved.</div>
+    </footer>
+  
+  <!-- Crisp Live Chat (bottom-right) -->
+  <script>
+    window.$crisp=[]; window.CRISP_WEBSITE_ID="YOUR_CRISP_WEBSITE_ID";
+    (function(){
+      var d=document; var s=d.createElement("script"); s.src="https://client.crisp.chat/l.js"; s.async=1;
+      d.getElementsByTagName("head")[0].appendChild(s);
+    })();
+  </script>
+  </body>
+</html>
+

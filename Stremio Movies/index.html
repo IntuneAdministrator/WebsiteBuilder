@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="auto">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Streamio — Watch Movies & Series Online</title>
+    <meta name="description" content="Watch movies and series online. Trending, new releases, and top genres with trailers, watchlist, and more." />
+    <meta name="theme-color" content="#121212" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preload" as="image" href="https://picsum.photos/seed/cinema-hero/1600/700" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>🎬</text></svg>">
+    <script defer src="https://kit.fontawesome.com/4c0c2c2d75.js" crossorigin="anonymous"></script>
+    <script defer src="js/app.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" aria-label="Primary">
+      <div class="container nav">
+        <a href="./index.html" class="brand" aria-label="Streamio Home" style="position:absolute; left:0">
+          <span class="brand-icon">🎬</span>
+          <span class="brand-text">Streamio</span>
+        </a>
+        <nav class="nav-links" aria-label="Main navigation" style="margin:0 auto">
+          <a href="./index.html" class="active">Home</a>
+          <a href="./pages/catalog.html">Catalog</a>
+          <a href="./pages/pricing.html">Pricing</a>
+          <a href="./pages/about.html">About</a>
+          <a href="./pages/contact.html">Contact</a>
+        </nav>
+        
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- Hero -->
+      <section class="hero" aria-label="Hero">
+        <div class="hero-bg" role="img" aria-label="Cinematic collage background"></div>
+        <div class="container hero-content">
+          <h1 class="headline">Watch Movies & Series Online</h1>
+          <p class="tagline">Your ultimate streaming destination.</p>
+          <div class="cta-row">
+            <a class="btn primary" href="./pages/catalog.html">Browse Catalog</a>
+            <a class="btn ghost" href="#trending">Top Picks</a>
+          </div>
+        </div>
+        <div class="hero-overlay" aria-hidden="true">
+          <canvas id="particles" aria-hidden="true"></canvas>
+        </div>
+      </section>
+
+      <!-- Trending Carousel -->
+      <section id="trending" class="section" aria-label="Trending">
+        <div class="container section-header">
+          <h2 class="section-title"><i class="fa-solid fa-fire"></i> Trending</h2>
+          <div class="carousel-actions">
+            <button class="btn icon" data-carousel-prev aria-label="Prev">
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button class="btn icon" data-carousel-next aria-label="Next">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+        <div class="container">
+          <div class="carousel" data-carousel>
+            <!-- Cards -->
+            <div class="card" tabindex="0">
+              <img loading="lazy" src="https://picsum.photos/seed/trend1/400/600" alt="Trending movie poster" />
+              <div class="card-body">
+                <div class="card-top">
+                  <h3 class="card-title">Edge of Tomorrow</h3>
+                  <span class="rating"><i class="fa-solid fa-star"></i> 4.6</span>
+                </div>
+                <p class="meta">2014 • Sci‑Fi</p>
+                <button class="btn small secondary" data-open-trailer>Watch Trailer</button>
+              </div>
+            </div>
+            <div class="card" tabindex="0">
+              <img loading="lazy" src="https://picsum.photos/seed/trend2/400/600" alt="Trending series poster" />
+              <div class="card-body">
+                <div class="card-top">
+                  <h3 class="card-title">Neon Streets</h3>
+                  <span class="rating"><i class="fa-solid fa-star"></i> 4.4</span>
+                </div>
+                <p class="meta">2025 • Crime</p>
+                <button class="btn small secondary" data-open-trailer>Watch Trailer</button>
+              </div>
+            </div>
+            <div class="card" tabindex="0">
+              <img loading="lazy" src="https://picsum.photos/seed/trend3/400/600" alt="Trending movie poster" />
+              <div class="card-body">
+                <div class="card-top">
+                  <h3 class="card-title">Orbit</h3>
+                  <span class="rating"><i class="fa-solid fa-star"></i> 4.7</span>
+                </div>
+                <p class="meta">2023 • Adventure</p>
+                <button class="btn small secondary" data-open-trailer>Watch Trailer</button>
+              </div>
+            </div>
+            <div class="card" tabindex="0">
+              <img loading="lazy" src="https://picsum.photos/seed/trend4/400/600" alt="Trending movie poster" />
+              <div class="card-body">
+                <div class="card-top">
+                  <h3 class="card-title">Deep Blue</h3>
+                  <span class="rating"><i class="fa-solid fa-star"></i> 4.3</span>
+                </div>
+                <p class="meta">2019 • Drama</p>
+                <button class="btn small secondary" data-open-trailer>Watch Trailer</button>
+              </div>
+            </div>
+            <div class="card" tabindex="0">
+              <img loading="lazy" src="https://picsum.photos/seed/trend5/400/600" alt="Trending series poster" />
+              <div class="card-body">
+                <div class="card-top">
+                  <h3 class="card-title">Quantum Line</h3>
+                  <span class="rating"><i class="fa-solid fa-star"></i> 4.8</span>
+                </div>
+                <p class="meta">2024 • Sci‑Fi</p>
+                <button class="btn small secondary" data-open-trailer>Watch Trailer</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- New Releases -->
+      <section class="section" aria-label="New releases">
+        <div class="container section-header">
+          <h2 class="section-title"><i class="fa-solid fa-bolt"></i> New Releases</h2>
+        </div>
+        <div class="container grid grid-5">
+          <!-- 10 items -->
+          <article class="tile" tabindex="0">
+            <img loading="lazy" src="https://picsum.photos/seed/new1/400/600" alt="New release poster" />
+            <div class="tile-overlay">
+              <h3>Afterlight</h3>
+              <p>In a city that never sleeps, a detective chases time itself.</p>
+              <div class="tile-actions">
+                <button class="btn small secondary" data-open-trailer>Watch Trailer</button>
+              </div>
+            </div>
+          </article>
+          <article class="tile" tabindex="0">
+            <img loading="lazy" src="https://picsum.photos/seed/new2/400/600" alt="New release poster" />
+            <div class="tile-overlay">
+              <h3>Hollow Peak</h3>
+              <p>Strange echoes call from the mountain. Some doors should stay closed.</p>
+              <div class="tile-actions">
+                <button class="btn small secondary" data-open-trailer>Watch Trailer</button>
+              </div>
+            </div>
+          </article>
+          <article class="tile" tabindex="0">
+            <img loading="lazy" src="https://picsum.photos/seed/new3/400/600" alt="New release poster" />
+            <div class="tile-overlay">
+              <h3>Golden Hour</h3>
+              <p>A road trip becomes a journey of a lifetime.</p>
+              <div class="tile-actions">
+                <button class="btn small secondary" data-open-trailer>Watch Trailer</button>
+              </div>
+            </div>
+          </article>
+          <article class="tile" tabindex="0">
+            <img loading="lazy" src="https://picsum.photos/seed/new4/400/600" alt="New release poster" />
+            <div class="tile-overlay">
+              <h3>Iron Skies</h3>
+              <p>Rogue pilots fight for the last free city in the clouds.</p>
+              <div class="tile-actions">
+                <button class="btn small secondary" data-open-trailer>Watch Trailer</button>
+              </div>
+            </div>
+          </article>
+          <article class="tile" tabindex="0">
+            <img loading="lazy" src="https://picsum.photos/seed/new5/400/600" alt="New release poster" />
+            <div class="tile-overlay">
+              <h3>Moonlit</h3>
+              <p>A quiet town hides a celestial secret.</p>
+              <div class="tile-actions">
+                <button class="btn small secondary" data-open-trailer>Watch Trailer</button>
+              </div>
+            </div>
+          </article>
+          <article class="tile" tabindex="0">
+            <img loading="lazy" src="https://picsum.photos/seed/new6/400/600" alt="New release poster" />
+            <div class="tile-overlay">
+              <h3>Redline</h3>
+              <p>Street racers chase glory on a neon‑lit circuit.</p>
+              <div class="tile-actions">
+                <button class="btn small secondary" data-open-trailer>Watch Trailer</button>
+              </div>
+            </div>
+          </article>
+          <article class="tile" tabindex="0">
+            <img loading="lazy" src="https://picsum.photos/seed/new7/400/600" alt="New release poster" />
+            <div class="tile-overlay">
+              <h3>Everfall</h3>
+              <p>Two siblings discover a land where seasons collide.</p>
+              <div class="tile-actions">
+                <button class="btn small secondary" data-open-trailer>Watch Trailer</button>
+              </div>
+            </div>
+          </article>
+          <article class="tile" tabindex="0">
+            <img loading="lazy" src="https://picsum.photos/seed/new8/400/600" alt="New release poster" />
+            <div class="tile-overlay">
+              <h3>Last Light</h3>
+              <p>When the sun falters, humanity looks inward for hope.</p>
+              <div class="tile-actions">
+                <button class="btn small secondary" data-open-trailer>Watch Trailer</button>
+              </div>
+            </div>
+          </article>
+          <article class="tile" tabindex="0">
+            <img loading="lazy" src="https://picsum.photos/seed/new9/400/600" alt="New release poster" />
+            <div class="tile-overlay">
+              <h3>Static</h3>
+              <p>An engineer decodes a signal that should not exist.</p>
+              <div class="tile-actions">
+                <button class="btn small secondary" data-open-trailer>Watch Trailer</button>
+              </div>
+            </div>
+          </article>
+          <article class="tile" tabindex="0">
+            <img loading="lazy" src="https://picsum.photos/seed/new10/400/600" alt="New release poster" />
+            <div class="tile-overlay">
+              <h3>Whisper</h3>
+              <p>Love letters arrive from a future that may never come.</p>
+              <div class="tile-actions">
+                <button class="btn small secondary" data-open-trailer>Watch Trailer</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Genres -->
+      <section class="section" aria-label="Top genres">
+        <div class="container section-header">
+          <h2 class="section-title"><i class="fa-solid fa-layer-group"></i> Top Genres</h2>
+        </div>
+        <div class="container genres">
+          <button class="genre" data-genre="Action" aria-pressed="false"><i class="fa-solid fa-burst"></i> Action</button>
+          <button class="genre" data-genre="Drama" aria-pressed="false"><i class="fa-solid fa-masks-theater"></i> Drama</button>
+          <button class="genre" data-genre="Comedy" aria-pressed="false"><i class="fa-solid fa-face-grin-squint"></i> Comedy</button>
+          <button class="genre" data-genre="Sci-Fi" aria-pressed="false"><i class="fa-solid fa-rocket"></i> Sci‑Fi</button>
+          <button class="genre" data-genre="Horror" aria-pressed="false"><i class="fa-solid fa-ghost"></i> Horror</button>
+        </div>
+      </section>
+
+      <!-- CTA Banner -->
+      <section class="cta-banner" aria-label="Subscribe">
+        <div class="container cta-inner">
+          <div>
+            <h3>Subscribe Now for Unlimited Access</h3>
+            <p>HD & 4K • Offline downloads • Exclusive titles • No ads</p>
+          </div>
+          <a class="btn primary large" href="./pages/pricing.html">Subscribe Now</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" aria-label="Footer">
+      <div class="container footer-grid">
+        <div>
+          <div class="brand brand-invert"><span class="brand-icon">🎬</span> <span class="brand-text">Streamio</span></div>
+          <p class="muted">Cinematic streaming platform for movies and series. Watch anywhere.</p>
+        </div>
+        <nav aria-label="Footer navigation" class="footer-links">
+          <a href="./pages/about.html">About</a>
+          <a href="./pages/catalog.html">Catalog</a>
+          <a href="./pages/pricing.html">Pricing</a>
+          <a href="./pages/contact.html">Contact</a>
+        </nav>
+        <div class="socials" aria-label="Social media">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <div style="margin-top:.75rem">
+            <strong>Support</strong>
+            <p class="muted" style="margin:.25rem 0 0">Email: support@streamio.example</p>
+            <p class="muted" style="margin:.15rem 0 0">Phone: +1 (555) 012-3456</p>
+          </div>
+        </div>
+      </div>
+      <div class="container tiny muted">© <span id="year"></span> Streamio. All rights reserved.</div>
+    </footer>
+
+    
+    <!-- Crisp Live Chat (bottom-right) -->
+    <script>
+      window.$crisp=[]; window.CRISP_WEBSITE_ID="YOUR_CRISP_WEBSITE_ID";
+      (function(){
+        var d=document; var s=d.createElement("script"); s.src="https://client.crisp.chat/l.js"; s.async=1;
+        d.getElementsByTagName("head")[0].appendChild(s);
+      })();
+    </script>
+
+    <!-- Trailer Modal -->
+    <div id="trailerModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="trailerTitle" hidden>
+      <div class="modal-dialog">
+        <button class="btn icon modal-close" data-close-modal aria-label="Close">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="modal-media">
+          <iframe id="trailerFrame" title="Trailer" width="560" height="315" src="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="modal-body">
+          <h3 id="trailerTitle">Trailer</h3>
+          <p class="muted">Enjoy a sneak peek.</p>
+          <div class="modal-actions">
+            <button class="btn secondary" data-add-watchlist><i class="fa-regular fa-bookmark"></i> Add to Watchlist</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+  
+</html>
+
