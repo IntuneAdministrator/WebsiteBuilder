@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Your Neighborhood Supermarket – Fresh groceries and everyday essentials. Shop fresh produce, dairy, snacks, beverages and more.">
+    <title>Your Neighborhood Supermarket</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 128 128'%3E%3Crect width='128' height='128' rx='24' fill='%232e7d32'/%3E%3Cpath d='M28 36h14l8 48h40' stroke='%23fff' stroke-width='8' fill='none' stroke-linecap='round'/%3E%3Ccircle cx='82' cy='92' r='6' fill='%23fbc02d'/%3E%3Ccircle cx='54' cy='92' r='6' fill='%23fbc02d'/%3E%3C/svg%3E" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="index.html">
+          <span class="logo-mark" aria-hidden="true">🛒</span>
+          <span class="logo-text">Neighborhood Market</span>
+        </a>
+        <nav class="nav" aria-label="Primary">
+          <button class="nav-toggle" aria-controls="nav-menu" aria-expanded="false">
+            <span class="sr-only">Menu</span>
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <ul id="nav-menu" class="nav-menu">
+            <li><a class="nav-link active" href="index.html">Home</a></li>
+            <li><a class="nav-link" href="about.html">About</a></li>
+            <li><a class="nav-link" href="products.html">Products</a></li>
+            <li><a class="nav-link" href="pricing.html">Offers</a></li>
+            <li><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- Hero -->
+      <section class="hero" aria-label="Hero banner">
+        <picture>
+          <source srcset="https://images.unsplash.com/photo-1542831371-29b0f74f9713?q=80&w=1600&auto=format&fit=crop" media="(min-width: 900px)" />
+          <img src="https://images.unsplash.com/photo-1511690656952-34342bb7c2f2?q=80&w=1200&auto=format&fit=crop" alt="Fresh produce and groceries in a bright supermarket" loading="eager"/>
+        </picture>
+        <div class="hero-overlay container">
+          <h1>Your Neighborhood Supermarket</h1>
+          <p>Fresh groceries, everyday essentials.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="products.html"><i class="fa-solid fa-cart-shopping"></i> Shop Now</a>
+            <a class="btn btn-accent" href="pricing.html"><i class="fa-solid fa-tags"></i> View Offers</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Products -->
+      <section class="section container" id="featured" aria-labelledby="featured-heading">
+        <div class="section-head">
+          <h2 id="featured-heading">Featured Products</h2>
+          <p>Handpicked favorites—fresh, tasty, and ready for your cart.</p>
+        </div>
+        <div class="product-grid">
+          <article class="product-card">
+            <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?q=80&w=800&auto=format&fit=crop" alt="Organic apples" loading="lazy" />
+            <div class="product-body">
+              <h3>Organic Apples</h3>
+              <p>Crisp and juicy—perfect for snacks and pies.</p>
+              <div class="product-meta">
+                <span class="price">$3.99 / lb</span>
+                <button class="btn btn-secondary add-to-cart" data-name="Organic Apples" data-price="3.99">Add to Cart</button>
+              </div>
+            </div>
+          </article>
+          <article class="product-card">
+            <img src="https://images.unsplash.com/photo-1567306226416-28f0efdc88ce?q=80&w=800&auto=format&fit=crop" alt="Fresh bananas" loading="lazy" />
+            <div class="product-body">
+              <h3>Fresh Bananas</h3>
+              <p>Sweet, potassium-rich, and kid-approved.</p>
+              <div class="product-meta">
+                <span class="price">$0.69 / ea</span>
+                <button class="btn btn-secondary add-to-cart" data-name="Bananas" data-price="0.69">Add to Cart</button>
+              </div>
+            </div>
+          </article>
+          <article class="product-card">
+            <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=800&auto=format&fit=crop" alt="Leafy greens" loading="lazy" />
+            <div class="product-body">
+              <h3>Mixed Greens</h3>
+              <p>Local, organic greens for salads and sides.</p>
+              <div class="product-meta">
+                <span class="price">$4.49</span>
+                <button class="btn btn-secondary add-to-cart" data-name="Mixed Greens" data-price="4.49">Add to Cart</button>
+              </div>
+            </div>
+          </article>
+          <article class="product-card">
+            <img src="https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?q=80&w=800&auto=format&fit=crop" alt="Artisan sourdough bread loaf" loading="lazy" />
+            <div class="product-body">
+              <h3>Artisan Bread</h3>
+              <p>Crusty outside, soft inside—baked fresh daily.</p>
+              <div class="product-meta">
+                <span class="price">$3.29</span>
+                <button class="btn btn-secondary add-to-cart" data-name="Artisan Bread" data-price="3.29">Add to Cart</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Promotions Carousel -->
+      <section class="section promos" aria-label="Promotions">
+        <div class="container">
+          <div class="section-head">
+            <h2>Seasonal Deals</h2>
+            <p>Save big on weekly specials and fresh picks.</p>
+          </div>
+
+          <div class="carousel" data-carousel>
+            <div class="carousel-track" data-carousel-track>
+              <article class="promo-slide is-active">
+                <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=1400&auto=format&fit=crop" alt="Fresh vegetables discount" loading="lazy" />
+                <div class="promo-caption">
+                  <h3>Veggie Week</h3>
+                  <p>Up to 25% off on greens and veggies.</p>
+                </div>
+              </article>
+              <article class="promo-slide">
+                <img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?q=80&w=1400&auto=format&fit=crop" alt="Breakfast bundle offer" loading="lazy" />
+                <div class="promo-caption">
+                  <h3>Breakfast Bundle</h3>
+                  <p>Cereal + milk + fruit for less.</p>
+                </div>
+              </article>
+              <article class="promo-slide">
+                <img src="https://images.unsplash.com/photo-1543353071-10c8ba85a904?q=80&w=1400&auto=format&fit=crop" alt="Beverages summer sale" loading="lazy" />
+                <div class="promo-caption">
+                  <h3>Summer Sips</h3>
+                  <p>Cool drinks at hot prices.</p>
+                </div>
+              </article>
+            </div>
+            <button class="carousel-btn prev" aria-label="Previous slide" data-carousel-prev><i class="fa-solid fa-chevron-left"></i></button>
+            <button class="carousel-btn next" aria-label="Next slide" data-carousel-next><i class="fa-solid fa-chevron-right"></i></button>
+            <div class="carousel-dots" data-carousel-dots></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="logo" href="index.html">
+            <span class="logo-mark" aria-hidden="true">🛒</span>
+            <span class="logo-text">Neighborhood Market</span>
+          </a>
+          <p class="mt-2">Fresh groceries, everyday essentials—right around the corner.</p>
+        </div>
+        <nav aria-label="Footer">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">About</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="pricing.html">Offers</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div>
+          <h4>Contact</h4>
+          <ul class="footer-links">
+            <li><i class="fa-solid fa-phone"></i> (555) 123-4567</li>
+            <li><i class="fa-solid fa-envelope"></i> hello@neighborhood.market</li>
+            <li><i class="fa-solid fa-location-dot"></i> 123 Market St, Hometown</li>
+          </ul>
+          <div class="social">
+            <a aria-label="Facebook" href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a aria-label="Instagram" href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a aria-label="Twitter" href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a aria-label="LinkedIn" href="#"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <p>© <span id="year"></span> Neighborhood Market. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <button class="back-to-top" aria-label="Back to top" hidden>
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script src="assets/js/main.js" defer></script>
+  </body>
+  </html>
+
+
