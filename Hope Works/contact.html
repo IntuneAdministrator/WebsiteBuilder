@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact | HopeWorks</title>
+    <meta name="description" content="Get in touch with HopeWorks. Send a message or find our location.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Merriweather:wght@700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" referrerpolicy="no-referrer"/>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="index.html" aria-label="HopeWorks home">
+          <img src="assets/img/logo.svg" alt="HopeWorks logo">
+          <span class="title">HopeWorks</span>
+        </a>
+        <nav class="nav-links" aria-label="Primary navigation">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="programs.html">Programs</a>
+          <a href="donate.html">Donate</a>
+          <a href="contact.html" class="active">Contact</a>
+        </nav>
+        <div class="nav-cta">
+          <a class="btn btn-ghost" href="donate.html"><i class="fa-solid fa-heart"></i><span>Donate</span></a>
+          <button class="menu-toggle" aria-label="Toggle menu"><i class="fa-solid fa-bars"></i></button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <div class="container">
+          <div class="section-header" data-animate>
+            <span class="kicker">Contact Us</span>
+            <h1>We'd love to hear from you</h1>
+            <p class="muted">Reach out with questions, partnership ideas, or media inquiries.</p>
+          </div>
+
+          <div class="contact-grid" data-animate>
+            <form class="contact-card" id="contactForm" novalidate>
+              <div class="grid grid-2">
+                <div class="field"><label for="name">Name</label><input id="name" name="name" type="text" required placeholder="Your full name"></div>
+                <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" required placeholder="you@example.com"></div>
+              </div>
+              <div class="grid grid-2">
+                <div class="field"><label for="phone">Phone</label><input id="phone" name="phone" type="tel" placeholder="(555) 123-4567"></div>
+                <div class="field"><label for="subject">Subject</label><input id="subject" name="subject" type="text" placeholder="How can we help?"></div>
+              </div>
+              <div class="field"><label for="message">Message</label><textarea id="message" name="message" required placeholder="Write your message..."></textarea></div>
+              <button class="btn btn-primary" type="submit">Send Message</button>
+              <p id="formMsg" class="muted" role="status" aria-live="polite" style="margin-top:8px;"></p>
+            </form>
+            <div class="contact-card" style="padding:0;overflow:hidden;">
+              <iframe title="HopeWorks HQ" src="https://www.google.com/maps?q=New%20York%20City&output=embed" width="100%" height="350" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <div style="padding:16px;display:grid;gap:8px;">
+                <strong>Direct Info</strong>
+                <p class="muted">+1 (555) 123-4567<br>hello@hopeworks.org<br>123 Unity Ave, Springfield</p>
+                <div style="display:flex;gap:10px;">
+                  <a href="https://facebook.com" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                  <a href="https://instagram.com" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                  <a href="https://linkedin.com" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                  <a href="https://twitter.com" aria-label="X / Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-col">
+          <div class="brand" style="margin-bottom:8px;">
+            <img src="assets/img/logo.svg" alt="HopeWorks logo small" width="28" height="28">
+            <strong>HopeWorks</strong>
+          </div>
+          <p class="muted">Together we empower communities with sustainable solutions.</p>
+        </div>
+        <div class="footer-col">
+          <strong>Quick Links</strong>
+          <div style="display:grid;gap:6px;margin-top:8px;">
+            <a href="about.html">About</a>
+            <a href="programs.html">Programs</a>
+            <a href="donate.html">Donate</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <strong>Connect</strong>
+          <div style="display:flex;gap:10px;margin-top:8px;">
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#" aria-label="X / Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <strong>Contact</strong>
+          <p class="muted">+1 (555) 123-4567<br>hello@hopeworks.org<br>123 Unity Ave, Springfield</p>
+        </div>
+      </div>
+      <div class="container" style="padding:12px 0;border-top:1px solid color-mix(in hsl, var(--color-text) 12%, transparent);display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;">
+        <small class="muted">© <span id="year"></span> HopeWorks. All rights reserved.</small>
+        <small class="muted">Made with care for our community.</small>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+      const form = document.getElementById('contactForm');
+      const msg = document.getElementById('formMsg');
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        if (!form.checkValidity()) {
+          msg.textContent = 'Please complete the required fields.';
+          msg.style.color = 'tomato';
+          return;
+        }
+        msg.textContent = 'Thank you! Your message has been received.';
+        msg.style.color = 'var(--color-text)';
+        form.reset();
+      });
+    </script>
+    <script src="assets/js/main.js"></script>
+  </body>
+  </html>
+
+

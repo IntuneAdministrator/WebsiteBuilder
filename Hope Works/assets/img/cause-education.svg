@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="Education illustration">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e6f3ff"/>
+      <stop offset="1" stop-color="#f2fff3"/>
+    </linearGradient>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1976d2"/>
+      <stop offset="1" stop-color="#2e7d32"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bg)"/>
+  <g transform="translate(200,200)">
+    <path d="M0 120 L400 0 L800 120 L400 240 Z" fill="#1976d2" opacity="0.9"/>
+    <path d="M160 180 L400 260 L640 180 L640 300 C640 360 580 400 400 440 C220 400 160 360 160 300 Z" fill="#2e7d32" opacity="0.9"/>
+    <circle cx="400" cy="120" r="26" fill="#fff"/>
+    <rect x="360" y="300" width="80" height="160" rx="8" fill="#0f172a" opacity="0.22"/>
+  </g>
+  <g transform="translate(80,80)" opacity="0.12">
+    <circle cx="150" cy="100" r="40" fill="#1976d2"/>
+    <circle cx="260" cy="160" r="30" fill="#2e7d32"/>
+    <circle cx="90" cy="220" r="24" fill="#1976d2"/>
+  </g>
+</svg>
+

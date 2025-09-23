@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Programs | HopeWorks</title>
+    <meta name="description" content="Explore HopeWorks programs in education, health, clean water, and disaster relief.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Merriweather:wght@700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" referrerpolicy="no-referrer"/>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="index.html" aria-label="HopeWorks home">
+          <img src="assets/img/logo.svg" alt="HopeWorks logo">
+          <span class="title">HopeWorks</span>
+        </a>
+        <nav class="nav-links" aria-label="Primary navigation">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="programs.html" class="active">Programs</a>
+          <a href="donate.html">Donate</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <div class="nav-cta">
+          <a class="btn btn-ghost" href="donate.html"><i class="fa-solid fa-heart"></i><span>Donate</span></a>
+          <button class="menu-toggle" aria-label="Toggle menu"><i class="fa-solid fa-bars"></i></button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <div class="container">
+          <div class="section-header" data-animate>
+            <span class="kicker">Our Programs</span>
+            <h1>Where your support creates impact</h1>
+            <p class="muted">Filter by category to find programs that resonate with you. Download our full overview for more details.</p>
+          </div>
+          <div class="filters" data-animate>
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="education">Education</button>
+            <button class="filter-btn" data-filter="health">Health</button>
+            <button class="filter-btn" data-filter="water">Clean Water</button>
+            <button class="filter-btn" data-filter="relief">Relief</button>
+          </div>
+          <div class="grid grid-3">
+            <article class="card" id="education" data-program="education" data-animate>
+              <div class="image"><img src="https://images.unsplash.com/photo-1529078155058-5d716f45d604?q=80&w=1200&auto=format&fit=crop" alt="Children learning in classroom" loading="lazy"></div>
+              <div class="body">
+                <h3>Education for All</h3>
+                <p class="muted">Scholarships and learning resources for underserved students.</p>
+                <a class="btn btn-ghost" href="donate.html">Support This Program</a>
+              </div>
+            </article>
+            <article class="card" data-program="health" data-animate>
+              <div class="image"><img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?q=80&w=1200&auto=format&fit=crop" alt="Community health clinic" loading="lazy"></div>
+              <div class="body">
+                <h3>Healthy Communities</h3>
+                <p class="muted">Mobile clinics, screenings, and maternal health support.</p>
+                <a class="btn btn-ghost" href="donate.html">Support This Program</a>
+              </div>
+            </article>
+            <article class="card" id="water" data-program="water" data-animate>
+              <div class="image"><img src="https://images.unsplash.com/photo-1501139083538-0139583c060f?q=80&w=1200&auto=format&fit=crop" alt="Villagers collecting clean water" loading="lazy"></div>
+              <div class="body">
+                <h3>Clean Water Access</h3>
+                <p class="muted">Wells, filters, and hygiene training for safe water.</p>
+                <a class="btn btn-ghost" href="donate.html">Support This Program</a>
+              </div>
+            </article>
+            <article class="card" id="relief" data-program="relief" data-animate>
+              <div class="image"><img src="https://images.unsplash.com/photo-1506818144585-74b29c980d4b?q=80&w=1200&auto=format&fit=crop" alt="Volunteers delivering relief supplies" loading="lazy"></div>
+              <div class="body">
+                <h3>Rapid Relief Fund</h3>
+                <p class="muted">Emergency food, shelter, and medicine after disasters.</p>
+                <a class="btn btn-ghost" href="donate.html">Support This Program</a>
+              </div>
+            </article>
+            <article class="card" data-program="education,health" data-animate>
+              <div class="image"><img src="https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?q=80&w=1200&auto=format&fit=crop" alt="Nutrition and school lunch program" loading="lazy"></div>
+              <div class="body">
+                <h3>School Nutrition</h3>
+                <p class="muted">Daily meals to boost learning and health outcomes.</p>
+                <a class="btn btn-ghost" href="donate.html">Support This Program</a>
+              </div>
+            </article>
+            <article class="card" data-program="water,relief" data-animate>
+              <div class="image"><img src="https://images.unsplash.com/photo-1472145246862-b24cf25c4a36?q=80&w=1200&auto=format&fit=crop" alt="Emergency water distribution" loading="lazy"></div>
+              <div class="body">
+                <h3>Crisis Water Distribution</h3>
+                <p class="muted">Rapid deployment of water in emergencies.</p>
+                <a class="btn btn-ghost" href="donate.html">Support This Program</a>
+              </div>
+            </article>
+          </div>
+
+          <div style="margin-top:16px;display:flex;gap:12px;align-items:center;" data-animate>
+            <a class="btn btn-primary" href="assets/docs/Programs.pdf" download><i class="fa-solid fa-file-pdf"></i><span>Programs.pdf</span></a>
+            <span class="muted">Download the full program catalog.</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-col">
+          <div class="brand" style="margin-bottom:8px;">
+            <img src="assets/img/logo.svg" alt="HopeWorks logo small" width="28" height="28">
+            <strong>HopeWorks</strong>
+          </div>
+          <p class="muted">Together we empower communities with sustainable solutions.</p>
+        </div>
+        <div class="footer-col">
+          <strong>Quick Links</strong>
+          <div style="display:grid;gap:6px;margin-top:8px;">
+            <a href="about.html">About</a>
+            <a href="programs.html">Programs</a>
+            <a href="donate.html">Donate</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <strong>Connect</strong>
+          <div style="display:flex;gap:10px;margin-top:8px;">
+            <a href="https://facebook.com" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://instagram.com" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://linkedin.com" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://twitter.com" aria-label="X / Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <strong>Contact</strong>
+          <p class="muted">+1 (555) 123-4567<br>hello@hopeworks.org<br>123 Unity Ave, Springfield</p>
+        </div>
+      </div>
+      <div class="container" style="padding:12px 0;border-top:1px solid color-mix(in hsl, var(--color-text) 12%, transparent);display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;">
+        <small class="muted">© <span id="year"></span> HopeWorks. All rights reserved.</small>
+        <small class="muted">Made with care for our community.</small>
+      </div>
+    </footer>
+
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+    <script src="assets/js/main.js"></script>
+  </body>
+  </html>
+
+
